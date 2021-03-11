@@ -3,7 +3,7 @@ Nextflow for NCI
 
 Nextflow doesn't currently work off-the-shelf at the Australian National Computing Infrastructure. @vladsaveliev's [custom Nextflow implementation](https://github.com/vladsaveliev/nextflow) includes a custom executor that works well, but pre-DSL2. This repo contains a more-recent version of Nextflow with DSL2 support and a NCI-compatible executor.
 
-Occasionally jobs may appear to fail incorrectly; I'm trying to debug this, but recommend that you use the errorStrategy directive set to either ignore (to retry manually) or with a limited number of retries, as appropriate.
+Occasionally (and intermittently!) nextflow may report that jobs have failed for an unknown reason. These are intermittent issues - they often succeed on retry. While this remains an issue I recommend that you use an errorStrategy directive set to either ignore (to retry manually) or with a limited number of retries, as appropriate.
 
 ![Nextflow logo](https://github.com/nextflow-io/trademark/blob/master/nextflow2014_no-bg.png)
 
