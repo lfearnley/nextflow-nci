@@ -209,7 +209,7 @@ abstract class AbstractGridExecutor extends Executor {
     void killTask( def jobId )  {
         def cmd = killTaskCommand(jobId)
         def proc = new ProcessBuilder(cmd).redirectErrorStream(true).start()
-        proc.waitForOrKill(10_000)
+        proc.waitForOrKill(240_000)
         def ret = proc.exitValue()
         if( ret==0 )
             return
