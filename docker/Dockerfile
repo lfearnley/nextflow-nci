@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-alpine
+FROM openjdk:23-ea-34-jdk-oraclelinux8
 MAINTAINER Paolo Di Tommaso <paolo.ditommaso@gmail.com>
 
 # Add required dependencies
